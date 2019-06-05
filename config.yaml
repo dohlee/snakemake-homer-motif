@@ -1,0 +1,8 @@
+manifest: '/data/project/dohoon/workbench/snakemake-star-rsem/manifest.csv'
+data_dir: '/data/project/dohoon/workbench/data'
+result_dir: '/data/project/dohoon/workbench/result'
+reference:
+    name: 'hg38'
+    prefix: '/data/project/dohoon/reference/hg38/hg38'
+    fasta: '/data/project/dohoon/reference/hg38/hg38.fa'
+threads:
