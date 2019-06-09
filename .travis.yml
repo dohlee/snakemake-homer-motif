@@ -14,7 +14,7 @@ before_install:
     - conda config --add channels conda-forge
 
 install:
-    - conda env create -f environment.yaml
+    - travis wait 30 conda env create -f environment.yaml
 
 before_script:
     - chmod 755 test.sh
