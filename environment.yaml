@@ -3,6 +3,4 @@ channels:
     - bioconda
 dependencies:
     - snakemake
-    - star
-    - rsem
-    - samtools
+    - homer
