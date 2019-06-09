@@ -21,4 +21,4 @@ before_script:
     - source activate homer-motif
     - snakemake -v
 
-script: ./test.sh
+script: travis_wait 40 ./test.sh
