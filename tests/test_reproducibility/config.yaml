@@ -1,23 +1,23 @@
-manifest: '/data/project/dohoon/workbench/snakemake-homer-motif/manifest.csv'
-data_dir: '/data/project/dohoon/workbench/data'
-result_dir: '/data/project/dohoon/workbench/result'
+manifest: 'manifest.csv'
+data_dir: 'data'
+result_dir: 'result'
 reference:
-    name: 'mm10'
-    prefix: '/data/project/dohoon/reference/mm10/mm10'
-    fasta: '/data/project/dohoon/reference/mm10/mm10.fa'
+    name: 'hg38_chr20'
+    prefix: 'reference/hg38_chr20'
+    fasta: 'reference/hg38_chr20.fa'
 # Specify the number of motifs to analyze.
-n_motifs: 10
+n_motifs: 3
 threads:
-    homer_motif_enrichment: 16
+    homer_motif_enrichment: 24
     homer_motif_find: 4
 homer_motif_enrichment:
     extra: ''
     mask: False
     bg: False
     chopify: False
-    len_: '8,10,12'
+    len_: '10'
     size: 200
-    S: 25
+    S: 10
     mis: 2
     norevopp: False
     nomotif: False

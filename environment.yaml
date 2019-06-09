@@ -1,0 +1,8 @@
+name: homer-motif
+channels:
+    - bioconda
+dependencies:
+    - snakemake
+    - star
+    - rsem
+    - samtools
