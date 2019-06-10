@@ -2,5 +2,5 @@ name: homer-motif
 channels:
     - bioconda
 dependencies:
-    - snakemake
+    - snakemake>=5.5.0
     - homer
