@@ -1,10 +1,10 @@
 #!/bin/bash
 set -e
 
-snakemake -s startup.smk -p
+snakemake -s startup.smk -p -j1
 
-snakemake -s ../../Snakefile --configfile config.yaml --config result_dir=result0 --resources motif_lock=1 -pr --cores 2
-snakemake -s ../../Snakefile --configfile config.yaml --config result_dir=result1 --resources motif_lock=1 -pr --cores 2
+snakemake -s ../../Snakefile --configfile config.yaml --config result_dir=result0 --resources motif_lock=1 -pr -j2
+snakemake -s ../../Snakefile --configfile config.yaml --config result_dir=result1 --resources motif_lock=1 -pr -j2
 
 a=$(md5sum result0/test/test.motif1.homer_result | cut -d' ' -f1)
 b=$(md5sum result1/test/test.motif1.homer_result | cut -d' ' -f1)
