@@ -4,5 +4,8 @@ channels:
     - bioconda
     - defaults
 dependencies:
-    - snakemake
+    - python=3.6
     - homer
+    - pip
+    - pip:
+        - snakemake
