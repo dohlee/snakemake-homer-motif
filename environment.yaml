@@ -10,4 +10,4 @@ dependencies:
     - homer
     - pip
     - pip:
-        - snakemake
+        - snakemake==5.8.2
